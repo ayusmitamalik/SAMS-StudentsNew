@@ -1,0 +1,67 @@
+
+.appBar{
+    background-color: rgb(10, 100, 100) !important;
+    width: 100%;
+    height: 25%;
+}
+.Head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    width: 5%;
+}
+.Logo img{
+    width: 100%;
+    margin-left: 250px;
+    margin-top: -80px;
+}
+.component{
+    width: 10%;
+    cursor: pointer;
+    /* display: flex; */
+    margin-left: -2200px;
+    margin-top: 120px;
+}
+.component ul{
+    display: flex;
+    gap: 70%;
+    
+    
+}
+.component ul li{
+    list-style-type: none;
+    display: inline;
+   
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large; 
+    padding: 9%; 
+    
+}
+.component ul li:hover {
+    color: black;
+    background-color: bisque;
+    list-style-type: none;
+    display: inline;
+    padding: 9%; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large; 
+    
+}
+
+
+button{
+    
+    padding: 7px 15px;
+    border:  none;
+    border-radius: 20px;
+    background-color:rgb(217, 200, 101);
+    outline: none;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-left: 220px;
+    margin-top: 35px;
+}

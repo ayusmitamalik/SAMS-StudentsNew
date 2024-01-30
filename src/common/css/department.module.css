@@ -1,0 +1,12 @@
+.pen{
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+    padding-left: 35%;
+    background-color: #ffdc73;
+    margin-bottom: 80px;
+
+}
+.book{
+    background-image: url(https://th.bing.com/th/id/R.c6c674b99936285eca671a667398435b?rik=TQFLJi5EM5hL5Q&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fDesktop-HD-college-wallpapers.jpg&ehk=GzZeFHt2MmGHTUYBLCu2VXUZvhCfJ6Gj0R%2fX%2bpO54gA%3d&risl=&pid=ImgRaw&r=0);
+    display: flex;
+}

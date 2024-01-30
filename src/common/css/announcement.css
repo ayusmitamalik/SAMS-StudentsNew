@@ -1,0 +1,33 @@
+.announcement-container {
+  
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  position:relative;
+}
+
+.announcement-wrapper {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.announcement {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.announcement-content {
+  color: teal;
+  /* padding: 5px; */
+  /* background-color: #f2f2f2; */
+  /* border-radius: 2px; */
+}
