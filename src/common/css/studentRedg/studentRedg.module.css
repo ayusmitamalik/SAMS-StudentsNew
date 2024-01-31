@@ -1,0 +1,47 @@
+.profileBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../image/hostel.jpg);
+    background-position: center;
+    background-size: cover;
+    /* justify-content: center;
+    width: 100%;  */
+    /* background-color: rgb(141, 236, 236); */
+}
+
+.containerBox {
+    border: 7px solid teal;
+    padding: 20px;
+    margin: 10px;
+    width: 60vw;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(133, 38, 38, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    background-color: rgb(207, 236, 236);
+    margin-bottom: 3px;
+    padding: 10px;
+}
+
+.inputBox select {
+    width: 100%;
+    background-color:rgb(207, 236, 236);
+    margin-bottom: 3px;
+    padding: 10px;
+    width:774px;
+}
+
+/* .inputBox input ::placeholder{
+    color: grey;
+} */
