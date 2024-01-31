@@ -9,6 +9,12 @@ import DepartmentPage from "../components/department/index";
 import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
+
+import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
+import RegistrationForm from "../components/studentRedg/studentRedg"
+import Homenoticeboard from"../components/home/homenoticeboard";
+
+
 const AppRouter = () => {
   return (
     <Router>
@@ -23,6 +29,13 @@ const AppRouter = () => {
         <Route path="/admission" element={<StudentAdmissionForm />} />
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
+
+
+        <Route path="/profile" element={<StudentProfile />}/>
+        <Route path="/studentRedg" element={<RegistrationForm />}/>
+        <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
+       
+
 
       </Routes>
     </Router>
