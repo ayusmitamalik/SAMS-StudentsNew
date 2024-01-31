@@ -1,0 +1,29 @@
+/* placement.module.css */
+
+.text1 {
+    font-size: 300%;
+    padding-right: 15%;
+    padding-left: 5%;
+    background-color: teal;
+    color: #ffcf40;
+    text-align: center;
+  }
+  
+  .text2,
+  .text3,
+  .text4,
+  .text5,
+  .text6,
+  .text7 {
+    font-size: larger;
+    padding-right: 15%;
+    padding-left: 5%;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add any other styles as needed */
+  
