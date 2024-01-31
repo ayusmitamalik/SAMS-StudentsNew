@@ -9,6 +9,7 @@ import DepartmentPage from "../components/department/index";
 import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
+import Placementpage from "../components/Placement/placement";
 const AppRouter = () => {
   return (
     <Router>
@@ -24,6 +25,9 @@ const AppRouter = () => {
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
 
+
+
+        <Route path="/placement" element={<Placementpage/>}/>
       </Routes>
     </Router>
   );
