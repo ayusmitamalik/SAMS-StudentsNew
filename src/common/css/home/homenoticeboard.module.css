@@ -1,0 +1,44 @@
+.notice-board {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column-reverse; /* Display notices in reverse order */
+  }
+  
+  .notice-container {
+    flex-grow: 1;
+  }
+  
+  .notice {
+    /* background-color: #66b2b2; */
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid #ddd;
+    animation: slide-up 1s ease-out;
+    color: rgb(7, 78, 78);
+    
+  }
+
+  .notice:nth-child(odd) {
+    background-color: 	#b2d8d8; /* Background color for odd-numbered notices */
+    border: 3px solid yellow;
+  }
+  .notice:nth-child(even) {
+    background-color: #b2d8d8; /* Background color for even-numbered notices */
+  }
+
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

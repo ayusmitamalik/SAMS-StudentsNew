@@ -20,6 +20,13 @@ import MePage from "../components/faculty/branches/me";
 import MbaPage from "../components/faculty/branches/mba";
 import McaPage from "../components/faculty/branches/mca";
 import BcaPage from "../components/faculty/branches/bse";
+import Placementpage from "../components/Placement/placement";
+
+import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
+import RegistrationForm from "../components/studentRedg/studentRedg"
+import Homenoticeboard from"../components/home/homenoticeboard";
+
+
 const AppRouter = () => {
   return (
     <Router>
@@ -47,6 +54,12 @@ const AppRouter = () => {
          <Route path="/mba" element={<MbaPage/>}/>
          <Route path="/mca" element={<McaPage/>}/>
          <Route path="/bse" element= {<BcaPage/>}/>
+        <Route path="/placement" element={<Placementpage/>}/>
+        <Route path="/profile" element={<StudentProfile />}/>
+        <Route path="/studentRedg" element={<RegistrationForm />}/>
+        <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
+       
+
 
       </Routes>
     </Router>
