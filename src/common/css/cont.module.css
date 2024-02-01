@@ -1,4 +1,4 @@
-#teacher-contact-info {
+#teacher_contact_info {
   background-image: url("https://thumbs.dreamstime.com/b/communicate-icon-seamless-pattern-wifi-network-more-42345705.jpg");
    background-color: rgb(1, 16, 16);
   /* max-width: 800px; */
@@ -8,7 +8,7 @@
 }
 
 
-.teacher-card {
+.teacher_card {
   width: 800px;
   background-color:rgb(83, 168, 168);
   border-radius: 5px;
@@ -17,10 +17,10 @@
   box-shadow: 0 2px 4px rgb(132, 117, 33);
 }
 
-.teacher-card h2 {
+.teacher_card h2 {
   margin-top: 0;
 }
 
-.teacher-card p {
+.teacher_card p {
   margin-bottom: 5px;
 }
