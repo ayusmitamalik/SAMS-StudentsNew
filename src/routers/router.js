@@ -9,9 +9,7 @@ import DepartmentPage from "../components/department/index";
 import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
-<<<<<<< HEAD
 import Facilities from "../components/facilities/facilities";
-=======
 
 
 import FacultyPage from "../components/faculty/sidebar";
@@ -30,7 +28,6 @@ import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
 
 
->>>>>>> 8aa20d373a1a936ea388964ee135936b9956387e
 const AppRouter = () => {
   return (
     <Router>
