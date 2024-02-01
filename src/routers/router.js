@@ -12,7 +12,10 @@ import TeacherContactInfo from "../components/Contact/cont";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
-import Homenoticeboard from"../components/home/homenoticeboard";
+import Homenoticeboard from"../components/home/homeNoticeBoard";
+
+// home page route 
+import HomeCoursesOffered from "../components/home/homeCoursesOffered";
 
 
 const AppRouter = () => {
@@ -35,7 +38,8 @@ const AppRouter = () => {
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
        
-
+        {/* home page router */}
+        <Route path = "/courses" elements= {<HomeCoursesOffered/>}/>
 
       </Routes>
     </Router>
