@@ -1,0 +1,75 @@
+h1{
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(38, 108, 108);
+  color: rgb(151, 138, 62);
+  text-align: center;
+
+}
+
+form {
+    background-image: "SAMS-Student/src/common/image/login_bg.jpg";
+    font-family:'Times New Roman', Times, serif;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  fieldset {
+    color: rgb(4, 63, 63);
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 15px gold;
+    /* background-color: rgb(194, 244, 244); */
+  }
+  
+  legend {
+    color:rgb(146, 125, 11);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+  
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="date"] {
+    padding: 7px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color:rgb(16, 99, 99);
+    color: white;
+    padding: 10px 20px;
+    border:rgb(10, 118, 118);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    
+  }
+  
+ 
