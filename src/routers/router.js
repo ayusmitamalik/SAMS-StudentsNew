@@ -25,6 +25,7 @@ import Placementpage from "../components/Placement/placement";
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
+import Aboutpage from "../components/About/About";
 
 
 const AppRouter = () => {
@@ -42,7 +43,7 @@ const AppRouter = () => {
         <Route path="/admission" element={<StudentAdmissionForm />} />
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
-
+        <Route path="/about" element={<Aboutpage />}/>
 
 
         //fas
