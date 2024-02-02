@@ -1,0 +1,79 @@
+
+*{
+    overflow-x: hidden;
+} 
+.sidebar{
+    background-color: rgb(17, 81, 81);
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    border: 3px solid yellow;
+    z-index: 2;
+
+}
+.closebtn{
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    color: yellow;
+    
+
+}
+.head{
+    height: 65px;
+    background-color: teal;
+
+}
+
+.menu{
+    width: 100%;
+    margin-top: 20px;    
+}
+
+.item{
+    position: relative;
+    cursor: pointer;
+
+}
+.item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.bigphoto{
+    position: relative;
+    padding-left: 15%;
+    display: flex;
+    /* overflow-x: hidden; */
+  
+    /* xs: 12px;
+    sm: 6px; */
+}
+.textphoto{
+        position: absolute;
+        top: 8px;
+        left: 50%;
+}
+
+

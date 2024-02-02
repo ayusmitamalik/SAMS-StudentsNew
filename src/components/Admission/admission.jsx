@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../common/css/admission.css";
+import style from "../../common/css/admission.module.css";
 
 function StudentAdmissionForm() {
   return (
