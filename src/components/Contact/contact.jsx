@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../common/css/cont.module.css";
+import "../../common/css/contact.module.css";
 const TeacherContactInfo = () => {
   return (
     <div id="teacher-contact-info">
