@@ -25,11 +25,11 @@ import Placementpage from "../components/Placement/placement";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
-// import Homenoticeboard from"../components/home/homeNoticeBoard";
+import Homenoticeboard from"../components/home/homeNoticeBoard";
 
 // home page route 
-import HomeCoursesOffered from "../components/home/homeCoursesOffered";
-import Homenoticeboard from"../components/home/homenoticeboard";
+import Courses from "../components/home/homeCoursesOffered";
+// import Homenoticeboard from"../components/home/homenoticeboard";
 import Aboutpage from "../components/About/About";
 
 
@@ -69,7 +69,7 @@ const AppRouter = () => {
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
        
         {/* home page router */}
-        <Route path = "/courses" elements= {<HomeCoursesOffered/>}/>
+        <Route path = "/courses" element= {<Courses/>}/>
 
       </Routes>
     </Router>
