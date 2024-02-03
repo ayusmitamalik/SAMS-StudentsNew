@@ -27,6 +27,9 @@ import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
 
 
+// for home pg
+import Homenotice from "../components/home/homeNotice"; 
+
 const AppRouter = () => {
   return (
     <Router>
@@ -59,7 +62,10 @@ const AppRouter = () => {
         <Route path="/profile" element={<StudentProfile />}/>
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
-       
+
+        
+        <Route path = "/homnotice" element= {<Homenotice/>}/>
+
 
 
       </Routes>
