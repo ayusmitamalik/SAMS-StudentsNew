@@ -23,7 +23,7 @@ import BcaPage from "../components/faculty/branches/bse";
 import Placementpage from "../components/Placement/placement";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
-import RegistrationForm from "../components/studentRedg/studentRedg"
+import RegistrationForm from "../components/studentRedg/studentRedg";
 import Homenoticeboard from"../components/home/homenoticeboard";
 
 

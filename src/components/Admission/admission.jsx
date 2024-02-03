@@ -1,100 +1,429 @@
-import React from 'react';
-import style from "../../common/css/admission.module.css";
+import React, { useState } from "react";
+import { Grid, Paper, TextField, Button, FormControl, MenuItem, Select, InputLabel } from '@mui/material';
+import style from "../../common/css/admission.module.css"
 
-function StudentAdmissionForm() {
+
+const Admission = () => {
+  const [studentData, setstudentData] = useState({
+    std_regNo: "",
+    std_f_name: "",
+    std_l_name: "",
+    std_gen: "",
+    std_dob: "",
+    std_categ: "",
+    std_dad_name: "",
+    std_mom_name: "",
+    std_city: "",
+    std_state: "",
+    std_country: "",
+    std_pin: "",
+    std_phone: "",
+    std_email: "",
+    std_per_adres: "",
+    std_per_adres2: "",
+    std_edu: "",
+    std_passyear10: "",
+    std_passyear12: "",
+    std_marksheet10: "",
+    std_marksheet12: "",
+    std_certificate10: "",
+    std_certificate12: "",
+    std_perct10: "",
+    std_perct12: "",
+    std_status: "",
+    std_adhaar: "",
+    std_psphoto: "",
+    std_photo: null,
+  });
+
+  const handleinputchange = (event) => {
+    const { name, value } = event.target;
+    setstudentData((studentData) => ({
+      ...studentData,
+      [name]: value,
+    }));
+  };
   return (
-    
-    <form>
-      <h1>College Admission Form</h1>
-      <fieldset>
-        <legend>Personal Information</legend>
-        <label htmlFor="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required />
+    <Grid container spacing={3}>
+      <Grid item xs={12}>
+        <Paper elevation={3}>
+          <Grid container spacing={3} p={3}>
+            <Grid item xs={12}>
+              <h2>Admission Form</h2>
+            </Grid>
 
-        <label htmlFor="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required />
+            <Grid item xs={12} md={12}>
+              <p>Registration Number</p>
+              <TextField
+                label="redg no."
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_regNo"
+                value={studentData.std_regNo}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+            <Grid item xs={12}>
+              <h2>Personal Details</h2>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Name</p>
+              <TextField
+                label="First Name"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_f_name"
+                value={studentData.std_f_name}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>.</p>
+              <TextField
+                label="Last Name"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_l_name"
+                value={studentData.std_l_name}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>DOB</p>
+              <TextField
+                type="date"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_dob"
+                value={studentData.std_dob}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Gender</p>
+              <FormControl>
+                <InputLabel>Select</InputLabel>
+                <Select
+                 name="std_gen"
+                 value={studentData.std_gen}
+                 onChange={handleinputchange}
+                 fullWidth
+                 variant="outlined"
+                 margin="dense"
+                >
+                  <MenuItem value="Male">Male</MenuItem>
+                  <MenuItem value="Female">Female</MenuItem>
+                  <MenuItem value="Others">Others</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Email id</p>
+              <TextField
+                label="eg:abc@gmail.com"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_email"
+                value={studentData.std_email}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Phone No.</p>
+              <TextField
+                label="Phone Number"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_phone"
+                value={studentData.std_phone}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="mobile">Mobile Number:</label>
-        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required />
+            <Grid item xs={12} md={6}>
+              <p>Father's Name</p>
+              <TextField
+                label="Mr."
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_dad_name"
+                value={studentData.std_dad_name}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Mother's name</p>
+              <TextField
+                label="Mrs."
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_mom_name"
+                value={studentData.std_mom_name}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-          <option value="">Select Gender</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Other">Other</option>
-        </select>
+            <Grid item xs={12} md={6}>
+              <p>Address</p>
+              <TextField
+                label="Address Line 1"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_per_adres"
+                value={studentData.std_per_adres}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>.</p>
+              <TextField
+                label="Address Line 2"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_per_adres2"
+                value={studentData.std_adres2}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                label="City"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_city"
+                value={studentData.std_city}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                label="State"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_state"
+                value={studentData.std_state}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                label="Pin Code"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_pin"
+                value={studentData.std_pin}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <TextField
+                label="Country"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_country"
+                value={studentData.std_country}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required />
-      </fieldset>
+            <Grid item xs={12}>
+              <h2>Educational Details</h2>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>10th Passing Year</p>
+              <TextField
+                label="2015-2022"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_passyear10"
+                value={studentData.std_passyear10}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>10th Percentage</p>
+              <TextField
+                label="%"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_perct10"
+                value={studentData.std_perct10}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-      <fieldset>
-        <legend>Address Information</legend>
-        <label htmlFor="address">Address:</label>
-        <textarea id="address" name="address" required></textarea>
+            <Grid item xs={12} md={6}>
+              <p>12th Passing Year</p>
+              <TextField
+                label="2015-2024"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_perct12"
+                value={studentData.std_passyear12}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>12th Percentage</p>
+              <TextField
+                label="%"
+                type="number"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_perct12"
+                value={studentData.std_perct12}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="city">City:</label>
-        <input type="text" id="city" name="city" required />
+            <Grid item xs={12} md={6}>
+              <p>10th Marksheet </p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_marksheet10"
+                value={studentData.std_marksheet10}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>10th Certificate </p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_marksheet12"
+                value={studentData.std_certificate10}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="pincode">Pin Code:</label>
-        <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required />
+            <Grid item xs={12} md={6}>
+              <p>12th Marksheet </p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_marksheet12"
+                value={studentData.std_marksheet12}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>12th Certificate </p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_certificate12"
+                value={studentData.std_certificate12}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="state">State:</label>
-        <input type="text" id="state" name="state" required />
-      </fieldset>
+            <Grid item xs={12}>
+              <h2>Course/Facilities Interested</h2>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Course Name</p>
+              <TextField
+                label="eg:B.tech,M.tech,MBA,MCA"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_edu"
+                value={studentData.std_edu}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-      <fieldset>
-        <legend>Educational Information</legend>
-        <label htmlFor="qualification">Qualification:</label>
+            <Grid item xs={12} md={6}>
+              <p>Status</p>
+              <TextField
+                label="Day Scholar/Hostel"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_status"
+                value={studentData.std_status}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="10th">10th Board:</label>
-        <input type="text" id="10th" name="10th" required />
+            <Grid item xs={12}>
+              <h2>Required Details</h2>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <p>Adhaar Card </p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_adhaar"
+                value={studentData.std_adhaar}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="schoolName">School Name:</label>
-        <input type="text" id="schoolName" name="schoolName" required />
+            <Grid item xs={12} md={6}>
+              <p>Passport size Photo</p>
+              <TextField
+                type="file"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_psphoto"
+                value={studentData.std_psphoto}
+                onChange={handleinputchange}
+              />
+            </Grid>
 
-        <label htmlFor="yearOfPassing">Year of Passing 10th:</label>
-        <input type="number" id="yearOfPassing" name="yearOfPassing" min="1950" max="2023" required />
+            <Grid item xs={1}>
+              <Button variant="contained" color="primary" fullWidth>
+                Back
+              </Button>
+            </Grid>
 
-        <label htmlFor="percentage">Percentage in 10th:</label>
-        <input type="number" id="percentage" name="percentage" min="0" max="100" step="0.01" required />
-
-        <label htmlFor="12th">12th Board:</label>
-        <input type="text" id="12th" name="12th" required />
-
-        <label htmlFor="collegeName">College/School Name:</label>
-        <input type="text" id="collegeName" name="collegeName" required />
-
-        <label htmlFor="yearOfPassing">Year of Passing 12th:</label>
-        <input type="number" id="yearOfPassing" name="yearOfPassing" min="1950" max="2023" required />
-
-        <label htmlFor="percentage">Percentage in 12th:</label>
-        <input type="number" id="percentage" name="percentage" min="0" max="100" step="0.01" required />
-      </fieldset>
-
-      <fieldset>
-        <legend>Upload Documents</legend>
-        <label htmlFor="photo">Upload Photo:</label>
-        <input type="file" id="photo" name="photo" accept="image/*" required />
-        <label htmlFor="docs">Upload Documents:</label>
-        <input type="file" id="docs" name="docs" accept=".pdf,.doc,.docx" required />
-      </fieldset>
-
-      <fieldset>
-        <legend>Payment Information</legend>
-        <label htmlFor="amount">Payment Amount:</label>
-        <input type="number" id="amount" name="amount" min="1" required />
-        <label htmlFor="transaction">Transaction ID:</label>
-        <input type="text" id="transaction" name="transaction" required />
-      </fieldset>
-
-      <button type="submit">Submit</button>
-    </form>
+            <Grid item xs={1}>
+              <Button variant="contained" color="warning" fullWidth>
+                Submit
+              </Button>
+            </Grid>
+          </Grid>
+        </Paper>
+      </Grid>
+    </Grid>
   );
-}
+};
 
-export default StudentAdmissionForm;
+export default Admission;
