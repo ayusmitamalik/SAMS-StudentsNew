@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Grid, IconButton } from "@mui/material";
+import { Card, Grid } from "@mui/material";
 
 // import AlignVerticalCenterIcon from '@mui/icons-material/AlignVerticalCenter';
 import CallIcon from '@mui/icons-material/Call';
@@ -9,7 +9,7 @@ import campus2 from "../../common/image/campus2.avif";
 
 
 import style from "../../common/css/home/homecontact.module.css"
-import { SipOutlined } from "@mui/icons-material";
+
 export default function Contact() {
     const navigate = useNavigate();
     return (

@@ -47,12 +47,12 @@ export default function ButtonAppBar() {
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 
-              <Grid className={style.logo}>
+              <Grid className={style.logo} style={{display:'flex',alignItems:'center'}}>
                 <img src={MainLogo} alt='' style={{ width: "10%" }} />
-                <h4 style={{color:'gold'}}>EDUCATIONAL UNIVERSITY</h4>
+                <h4 style={{color:'gold',fontWeight:'700',marginTop:'10px',marginLeft:'4%'}}>EDUCATIONAL UNIVERSITY</h4>
               </Grid>
             </Typography>
-            <Grid className={style.compo}>
+            <Grid className={style.compo}style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'10px 20px'}}>
               <ul>
                 {/* <li onClick={() => navigate("/")}>Home</li> */}
                 <li onClick={() => navigate("/admission")}>Admission</li>

@@ -1,9 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
-// import style from "../../../src/common/css/homeabout.module.css";
-import style from "../../../src/common/css/home/homeabout.module.css";
-// import chairman from "../../common/image/chairman.png"
-import photo from "../../common/image/chairman.png";
+
 
 export default function Aboutuspage() {
   return (
