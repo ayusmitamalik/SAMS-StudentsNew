@@ -7,10 +7,12 @@ const Admission = () => {
   const [studentData, setstudentData] = useState({
     std_regNo: "",
     std_f_name: "",
+    std_m_name: "",
     std_l_name: "",
     std_gen: "",
     std_dob: "",
     std_categ: "",
+    std_rel: "",
     std_dad_name: "",
     std_mom_name: "",
     std_city: "",
@@ -68,7 +70,7 @@ const Admission = () => {
             <Grid item xs={12}>
               <h2>Personal Details</h2>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4}>
               <p>Name</p>
               <TextField
                 label="First Name"
@@ -80,7 +82,19 @@ const Admission = () => {
                 onChange={handleinputchange}
               />
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4}>
+              <p>.</p>
+              <TextField
+                label="Middle Name"
+                fullWidth
+                variant="outlined"
+                margin="dense"
+                name="std_m_name"
+                value={studentData.std_m_name}
+                onChange={handleinputchange}
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
               <p>.</p>
               <TextField
                 label="Last Name"
@@ -92,7 +106,7 @@ const Admission = () => {
                 onChange={handleinputchange}
               />
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4}>
               <p>DOB</p>
               <TextField
                 type="date"
@@ -104,17 +118,17 @@ const Admission = () => {
                 onChange={handleinputchange}
               />
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4}>
               <p>Gender</p>
               <FormControl>
                 <InputLabel>Select</InputLabel>
                 <Select
-                 name="std_gen"
-                 value={studentData.std_gen}
-                 onChange={handleinputchange}
-                 fullWidth
-                 variant="outlined"
-                 margin="dense"
+                  name="std_gen"
+                  value={studentData.std_gen}
+                  onChange={handleinputchange}
+                  fullWidth
+                  variant="outlined"
+                  margin="dense"
                 >
                   <MenuItem value="Male">Male</MenuItem>
                   <MenuItem value="Female">Female</MenuItem>
@@ -122,7 +136,28 @@ const Admission = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={12} md={6}>
+
+            <Grid item xs={12} md={4}>
+              <p>Category</p>
+              <FormControl>
+                <InputLabel>Select</InputLabel>
+                <Select
+                  name="std_categ"
+                  value={studentData.std_categ}
+                  onChange={handleinputchange}
+                  fullWidth
+                  variant="outlined"
+                  margin="dense"
+                >
+                  <MenuItem value="General">General</MenuItem>
+                  <MenuItem value="OBC">OBC</MenuItem>
+                  <MenuItem value="SC">SC</MenuItem>
+                  <MenuItem value="ST">ST</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+
+            <Grid item xs={12} md={4}>
               <p>Email id</p>
               <TextField
                 label="eg:abc@gmail.com"
@@ -134,7 +169,7 @@ const Admission = () => {
                 onChange={handleinputchange}
               />
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={4}>
               <p>Phone No.</p>
               <TextField
                 label="Phone Number"
@@ -146,6 +181,29 @@ const Admission = () => {
                 value={studentData.std_phone}
                 onChange={handleinputchange}
               />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <p>Religion</p>
+              <FormControl>
+                <InputLabel>Select</InputLabel>
+                <Select
+                  name="std_rel"
+                  value={studentData.std_rel}
+                  onChange={handleinputchange}
+                  fullWidth
+                  variant="outlined"
+                  margin="dense"
+                >
+                  <MenuItem value="Buddhist">Buddhist</MenuItem>
+                  <MenuItem value="Christian">Christian</MenuItem>
+                  <MenuItem value="Hindu">Hindu</MenuItem>
+                  <MenuItem value="Jain">Jain</MenuItem>
+                  <MenuItem value="Judaism">Judaism</MenuItem>
+                  <MenuItem value="Muslim">Muslim</MenuItem>
+                  <MenuItem value="Sikh">Sikh</MenuItem>
+                  <MenuItem value="Others">Others</MenuItem>
+                </Select>
+              </FormControl>
             </Grid>
 
             <Grid item xs={12} md={6}>
