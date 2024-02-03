@@ -52,7 +52,7 @@ export default function ButtonAppBar() {
                 <h4 style={{color:'gold'}}>EDUCATIONAL UNIVERSITY</h4>
               </Grid>
             </Typography>
-            <Grid className={style.component}>
+            <Grid className={style.compo}>
               <ul>
                 {/* <li onClick={() => navigate("/")}>Home</li> */}
                 <li onClick={() => navigate("/admission")}>Admission</li>
@@ -82,9 +82,9 @@ export default function ButtonAppBar() {
                       horizontal: 'center',
                     }}
                   >
-                    <Typography sx={{ p: 1.5, color: "teal" }}>SIGN UP</Typography>
-                    <Typography sx={{ p: 1.5, color: "teal" }}>LOGIN</Typography>
-                    <Typography sx={{ p: 1.5, color: "teal" }}>LOG OUT</Typography>
+                    <Typography sx={{ p: 1.5, color: "teal" }}onClick={() => navigate("/signup")}>SIGN UP</Typography>
+                    <Typography sx={{ p: 1.5, color: "teal" }}>Login</Typography>
+                    <Typography sx={{ p: 1.5, color: "teal" }}>Logout</Typography>
                   </Popover>
                 </Grid>
               )}

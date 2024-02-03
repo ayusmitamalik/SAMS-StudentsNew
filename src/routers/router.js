@@ -17,7 +17,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/hometex" element={<Hometext />} />
+        <Route path="/hometext" element={<Hometext />} />
         <Route path="/gallery" element={<Gallery />}/>
 
         <Route path="/notice" element={<NoticePage />} />

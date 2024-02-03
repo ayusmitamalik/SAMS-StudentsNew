@@ -40,7 +40,7 @@
 .social i:hover{
     color: teal;
 }
-.component {
+.compo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,14 +48,14 @@
     
   }
   
-  .component ul {
+  .compo ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  .component li {
+  .compo li {
     margin: 0 25px;
     font-size: 18px;
     font-weight: 600;
@@ -64,7 +64,7 @@
     padding: 7px;
   }
   
-  .component li:hover {
+  .compo li:hover {
     text-decoration: underline;
     background-color: rgb(228, 207, 90);
     padding: 7px;
@@ -79,7 +79,7 @@
         margin-left: 0;
     }
 
-    .component {
+    .compo {
         width: 100%; /* Full width on smaller screens */
         justify-content: center; /* Center on smaller screens */
         padding: 2%;
