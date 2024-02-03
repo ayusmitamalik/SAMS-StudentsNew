@@ -10,7 +10,6 @@ import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
 
-
 import FacultyPage from "../components/faculty/sidebar";
 import CsePage from "../components/faculty/branches/cse";
 import CivilPage from "../components/faculty/branches/civil";
@@ -24,8 +23,9 @@ import Placementpage from "../components/Placement/placement";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
-import Homenoticeboard from"../components/home/homenoticeboard";
+import Homenoticeboard from "../components/home/homenoticeboard";
 
+import ImageSlider from "../components/home/homeImageSlider";  // for homepage
 
 const AppRouter = () => {
   return (
@@ -34,7 +34,7 @@ const AppRouter = () => {
         <Route path="/" element={<Index />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/hometex" element={<Hometext />} />
-        <Route path="/gallery" element={<Gallery />}/>
+        <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/notice" element={<NoticePage />} />
         <Route path="/department" element={<DepartmentPage />} />
@@ -43,28 +43,25 @@ const AppRouter = () => {
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
 
+        {/* Faculty Section */}
+        <Route path="/faculty" element={<FacultyPage />} />
+        <Route path="/cse" element={<CsePage />} />
+        <Route path="/civil" element={<CivilPage />} />
+        <Route path="/ele" element={<ElePage />} />
+        <Route path="/etc" element={<EtcPage />} />
+        <Route path="/me" element={<MePage />} />
+        <Route path="/mba" element={<MbaPage />} />
+        <Route path="/mca" element={<McaPage />} />
+        <Route path="/bse" element={<BcaPage />} />
 
-
-        //fas
-        <Route path="/faculty" element={<FacultyPage/>}/> 
-         <Route path="/cse" element={<CsePage/>}/>
-         <Route path="/civil" element={<CivilPage/>}/>
-         <Route path="/ele" element={<ElePage/>}/>
-         <Route path="/etc" element={<EtcPage/>}/>
-         <Route path="/me" element={<MePage/>}/>
-         <Route path="/mba" element={<MbaPage/>}/>
-         <Route path="/mca" element={<McaPage/>}/>
-         <Route path="/bse" element= {<BcaPage/>}/>
-        <Route path="/placement" element={<Placementpage/>}/>
-        <Route path="/profile" element={<StudentProfile />}/>
-        <Route path="/studentRedg" element={<RegistrationForm />}/>
-        <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
-       
-
-
+        <Route path="/placement" element={<Placementpage />} />
+        <Route path="/profile" element={<StudentProfile />} />
+        <Route path="/studentRedg" element={<RegistrationForm />} />
+        <Route path="/homenotice" element={<Homenoticeboard />} />
+        <Route path="/homeImageSlider" element={<ImageSlider />} />
       </Routes>
     </Router>
   );
 };
 
-export default AppRouter
+export default AppRouter;
