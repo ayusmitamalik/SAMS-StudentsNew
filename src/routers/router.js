@@ -25,6 +25,9 @@ import Placementpage from "../components/Placement/placement";
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
+//for home page
+import Homeplacemntpage from "../components/home/HomePlacement";
+       
 
 
 const AppRouter = () => {
@@ -59,6 +62,8 @@ const AppRouter = () => {
         <Route path="/profile" element={<StudentProfile />}/>
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
+
+        <Route path = "/homeplacement" element= {<Homeplacemntpage/>}/>
        
 
 
