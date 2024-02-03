@@ -9,6 +9,7 @@ import DepartmentPage from "../components/department/index";
 import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
+import Facilities from "../components/facilities/facilities";
 
 import InfoPage from "../components/faculty/branches/info";
 import FacultyPage from "../components/faculty/sidebar";
@@ -25,19 +26,25 @@ import Placementpage from "../components/Placement/placement";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
+//home
 import Homenoticeboard from"../components/home/homenoticeboard";
 
 //homepage
 import HomeFaculty from "../components/home/homefaculty";
 
+import Homeaboutpg from "../components/home/homeAboutVisionAim"; //for home pg
 
+import Contact from "../components/home/homeContact";
+
+import Signup from "../components/Signup/signup";
+import Signin from "../components/Signup/signin";
 const AppRouter = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/feedback" element={<Feedback />} />
-        <Route path="/hometex" element={<Hometext />} />
+        <Route path="/hometext" element={<Hometext />} />
         <Route path="/gallery" element={<Gallery />}/>
 
         <Route path="/notice" element={<NoticePage />} />
@@ -46,7 +53,9 @@ const AppRouter = () => {
         <Route path="/admission" element={<StudentAdmissionForm />} />
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
-
+        <Route path="/facilities" element={<Facilities/>}/>
+        {/* home */}
+        <Route path="/contact" element={<Contact/>}/>
 
 
         //fas
@@ -65,8 +74,13 @@ const AppRouter = () => {
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
         <Route path="/info" element={<InfoPage/>}/>
         <Route path="/homefaculty" element={<HomeFaculty/>}/>
+        
+        {/* //for home pg */}
+        <Route path = "/homeabout" element= {<Homeaboutpg/>}/> 
        
 
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
 
       </Routes>
     </Router>
