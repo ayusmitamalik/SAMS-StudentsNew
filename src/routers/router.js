@@ -10,7 +10,7 @@ import StudentAdmissionForm from "../components/Admission/admission";
 import HorizontalScrollingAnnouncement from "../components/Announcement/announcement";
 import TeacherContactInfo from "../components/Contact/cont";
 
-
+import InfoPage from "../components/faculty/branches/info";
 import FacultyPage from "../components/faculty/sidebar";
 import CsePage from "../components/faculty/branches/cse";
 import CivilPage from "../components/faculty/branches/civil";
@@ -22,9 +22,13 @@ import McaPage from "../components/faculty/branches/mca";
 import BcaPage from "../components/faculty/branches/bse";
 import Placementpage from "../components/Placement/placement";
 
+
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
+
+//homepage
+import HomeFaculty from "../components/home/homefaculty";
 
 
 const AppRouter = () => {
@@ -59,6 +63,8 @@ const AppRouter = () => {
         <Route path="/profile" element={<StudentProfile />}/>
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
+        <Route path="/info" element={<InfoPage/>}/>
+        <Route path="/homefaculty" element={<HomeFaculty/>}/>
        
 
 
