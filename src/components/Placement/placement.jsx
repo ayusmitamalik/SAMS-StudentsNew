@@ -1,3 +1,4 @@
+
 import React from "react";
 // import style from "../../common/css/placement.module.css";
 import { Grid } from "@mui/material";
@@ -6,8 +7,7 @@ import image2 from "../../common/image/placement cell.jpg";
 import image3 from "../../common/image/placement-stats.png";
 import image4 from "../../common/image/3_b395fa97615429467a84a0b420c5ebbf.webp";
 import image5 from "../../common/image/placement_upload_2022.png";
-import { teal } from "@mui/material/colors";
-import Style from "../../common/css/placement.module.css";
+
 function placementpage() {
 
   return (
