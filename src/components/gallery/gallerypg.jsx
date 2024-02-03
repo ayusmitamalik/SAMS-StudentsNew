@@ -66,7 +66,7 @@ const Gallery = () => {
 
       <div className={styles.container}>
         <div className={styles.slide} ref={slideRef}>
-          <div className={styles.item} style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp5310238.jpg)' }}>
+          <div className={styles.item} style={{ backgroundImage: 'url(https://cutewallpaper.org/26/best-festival-wallpaper/2188814930.jpg)' }}>
             <div className={styles.content}>
               <div className={styles.name}>FUNCTION</div>
               <div className={styles.des}>"A college's infrastructure is the foundation upon which knowledge is built, creating an environment where students can flourish and dreams can become reality."</div>
