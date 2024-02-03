@@ -3,7 +3,7 @@
     padding: 0;
 }
 .components{
-    background-image:url(../image/fbg.jpg);
+    background-image:url(../../image/fbg.jpg);
     justify-content: center;
     background-position: center;
     background-size: cover;
