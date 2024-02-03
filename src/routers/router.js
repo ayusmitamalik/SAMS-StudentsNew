@@ -28,6 +28,8 @@ import RegistrationForm from "../components/studentRedg/studentRedg"
 import Homenoticeboard from"../components/home/homenoticeboard";
 import Aboutpage from "../components/About/About";
 
+import Homeaboutpg from "../components/home/homeAboutVisionAim"; //for home pg
+
 
 const AppRouter = () => {
   return (
@@ -63,8 +65,10 @@ const AppRouter = () => {
         <Route path="/profile" element={<StudentProfile />}/>
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
+        
+        //for home pg
+        <Route path = "/homeabout" element= {<Homeaboutpg/>}/> 
        
-
 
       </Routes>
     </Router>
