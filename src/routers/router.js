@@ -25,8 +25,10 @@ import Placementpage from "../components/Placement/placement";
 
 import StudentProfile from "../common/studentProfileIndex/studentProfileIndex";
 import RegistrationForm from "../components/studentRedg/studentRedg"
+//home
 import Homenoticeboard from"../components/home/homenoticeboard";
 
+import Contact from "../components/home/homeContact";
 
 const AppRouter = () => {
   return (
@@ -44,7 +46,8 @@ const AppRouter = () => {
         <Route path="/announcement" element={<HorizontalScrollingAnnouncement />} />
         <Route path="/cont" element={<TeacherContactInfo />} />
         <Route path="/facilities" element={<Facilities/>}/>
-
+        {/* home */}
+        <Route path="/contact" element={<Contact/>}/>
 
 
         //fas
