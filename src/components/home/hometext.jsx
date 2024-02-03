@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import style from '../../common/css/hometext.module.css';
+import style from '../../common/css/home/hometext.module.css';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -24,7 +24,7 @@ export default function hometext() {
 
 
         <Grid >
-          <h1 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>ABOUT US</h1>
+          <h2 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>ABOUT US</h2>
           <Grid item lg={10}>
             <hr style={{ padding: "1px", backgroundColor: "goldenrod", marginLeft: '15%', marginRight: '15%' }}></hr>
           </Grid>
@@ -59,7 +59,7 @@ export default function hometext() {
 
 
         <Grid >
-          <h1 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>OUR CHAIRMAN</h1>
+          <h2 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>OUR CHAIRMAN</h2>
           <Grid item lg={10}>
             <hr style={{ padding: "1px", backgroundColor: "goldenrod", marginLeft: '15%', marginRight: '15%' }}></hr>
           </Grid>
@@ -82,7 +82,7 @@ export default function hometext() {
           </Grid>
         </Grid>
         <Grid >
-          <h1 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>OUR DIRECTOR</h1>
+          <h2 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>OUR DIRECTOR</h2>
           <Grid item lg={10}>
             <hr style={{ padding: "1px", backgroundColor: "goldenrod", marginLeft: '15%', marginRight: '15%' }}></hr>
           </Grid>
@@ -108,7 +108,7 @@ export default function hometext() {
 
 
         <Grid >
-          <h1 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>WHY UNKNOWN UNIVERSITY</h1>
+          <h2 style={{ paddingLeft: "40%", margin: "1.3vw", backgroundColor: "teal", color: "rgb(217, 200, 101)" }}>WHY UNKNOWN UNIVERSITY</h2>
 
           <Grid container direction="row" alignItems="center"
             paddingLeft="15%" paddingRight="15%" lg={12}>
@@ -200,9 +200,9 @@ export default function hometext() {
               
               
             </Carousel>
-            <Grid item lg={12}>
+            {/* <Grid item lg={12}>
               <hr style={{ padding: "1px", backgroundColor: "goldenrod" }}></hr>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
 
