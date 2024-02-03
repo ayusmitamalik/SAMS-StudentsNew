@@ -58,7 +58,7 @@ export default function Feedback() {
                     >
 
                         <Rating
-                            style={{ marginLeft: '100px', marginTop: '7px' }}
+                            style={{ marginLeft: '110px', marginTop: '7px' }}
 
                             name="hover-feedback"
                             value={value}
