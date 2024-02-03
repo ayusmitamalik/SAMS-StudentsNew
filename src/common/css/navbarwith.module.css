@@ -1,67 +1,92 @@
-
-.appBar{
-    background-color: rgb(10, 100, 100) !important;
+.appBar {
+    background-color: rgb(5, 123, 123) !important;
     width: 100%;
-    height: 25%;
+    height: 28vh; /* Use viewport height for responsiveness */
 }
-.Head{
+
+.Head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .Logo {
-    width: 5%;
+    width: 100%; 
+    /* Increase the logo width for better visibility on smaller screens */
 }
-.Logo img{
-    width: 100%;
-    margin-left: 250px;
-    margin-top: -80px;
+
+.Logo img {
+    width: 9%;
+    margin-left: 25%;
+    margin-top: 8vh;
+    /* margin-top: -8vh; Adjust margin using viewport height units */
 }
-.component{
-    width: 10%;
-    cursor: pointer;
-    /* display: flex; */
-    margin-left: -2200px;
-    margin-top: 120px;
-}
-.component ul{
+
+.component {
+    width: 100%; /* Utilize full width on smaller screens */
+    /* margin-top: 4vh; Adjust margin using viewport height units */
     display: flex;
-    gap: 70%;
-    
-    
 }
-.component ul li{
+
+.navList ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: -2%;
+
+    gap: 2%; 
+    /* Adjust the gap for better spacing on smaller screens */
+}
+
+.navList ul li {
     list-style-type: none;
     display: inline;
-   
-    color: white;
+    color:rgb(228, 207, 90);
+    margin: 0 30px;
+   cursor: pointer;
+    font-weight: 600;
+    font-size: 140%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large; 
-    padding: 9%; 
-    
+    padding: 1%; /* Adjust padding for better spacing on smaller screens */
 }
-.component ul li:hover {
+
+.navList ul li:hover {
     color: black;
-    background-color: bisque;
-    list-style-type: none;
-    display: inline;
-    padding: 9%; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large; 
-    
+    background-color: rgb(228, 207, 90);
+    padding: 1%;
+    text-decoration: underline;
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media only screen and (max-width: 768px) {
+    .Head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Logo {
+        width: 40%; /* Adjust logo width for better visibility on smaller screens */
+    }
+
+    .Logo img {
+        margin-top: 0; /* Remove top margin for better alignment */
+    }
+
+    .component {
+        margin-top: 2vh; /* Adjust margin using viewport height units */
+    }
+
+    .component ul {
+        gap: 2%; /* Adjust the gap for better spacing on smaller*/
+    }
+}
+.navList{
+    margin-top: -1%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 6%;
+
+    /* font-weight: 700; */
+    /* font-size: xx-large; */
 }
 
 
-button{
-    
-    padding: 7px 15px;
-    border:  none;
-    border-radius: 20px;
-    background-color:rgb(217, 200, 101);
-    outline: none;
-    cursor: pointer;
-    padding-left: 20px;
-    margin-left: 220px;
-    margin-top: 35px;
-}
