@@ -99,12 +99,28 @@ const AppRouter = () => {
         <Route path="/studentRedg" element={<RegistrationForm />} />
         <Route path="/homenotice" element={<Homenoticeboard />} />
 
-        <Route path="/homeplacement" element={<Homeplacemntpage />} />
+       
+        <Route path="/faculty" element={<FacultyPage/>}/> 
+        <Route path="/cse" element={<CsePage/>}/>
+        <Route path="/civil" element={<CivilPage/>}/>
+        <Route path="/ele" element={<ElePage/>}/>
+        <Route path="/etc" element={<EtcPage/>}/>
+        <Route path="/me" element={<MePage/>}/>
+        <Route path="/mba" element={<MbaPage/>}/>
+        <Route path="/mca" element={<McaPage/>}/>
+        <Route path="/bse" element= {<BcaPage/>}/>
+        <Route path="/placement" element={<Placementpage/>}/>
+        <Route path="/profile" element={<StudentProfile />}/>
+        <Route path="/studentRedg" element={<RegistrationForm />}/>
+        <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
 
-        <Route path="/info" element={<InfoPage />} />
-        <Route path="/homefaculty" element={<HomeFaculty />} />
+        <Route path = "/homeplacement" element= {<Homeplacemntpage/>}/>
+        <Route path="/info" element={<InfoPage/>}/>
+        <Route path="/homefaculty" element={<HomeFaculty/>}/>
+        
         {/* //for home pg */}
-        <Route path="/homeabout" element={<Homeaboutpg />} />
+        <Route path = "/homeabout" element= {<Homeaboutpg/>}/> 
+       
 
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
@@ -115,3 +131,4 @@ const AppRouter = () => {
 };
 
 export default AppRouter;
+
