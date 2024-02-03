@@ -97,16 +97,13 @@ const AppRouter = () => {
         <Route path="/profile" element={<StudentProfile />}/>
         <Route path="/studentRedg" element={<RegistrationForm />}/>
         <Route path = "/homenotice" element= {<Homenoticeboard/>}/>
-<<<<<<< HEAD
 
         <Route path = "/homeplacement" element= {<Homeplacemntpage/>}/>
-=======
         <Route path="/info" element={<InfoPage/>}/>
         <Route path="/homefaculty" element={<HomeFaculty/>}/>
         
         {/* //for home pg */}
         <Route path = "/homeabout" element= {<Homeaboutpg/>}/> 
->>>>>>> a8276c0d3f614d00151cbd866d66eece7d4f671b
        
 
         <Route path="/signup" element={<Signup />} />
@@ -117,8 +114,5 @@ const AppRouter = () => {
   );
 };
 
-<<<<<<< HEAD
 export default AppRouter;
-=======
-export default AppRouter;
->>>>>>> 6b433bddb53cb50922c26c22961ef1241010add7
+
